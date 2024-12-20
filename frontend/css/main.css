@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ebf7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  background: url('C:/Users/umaam/Downloads/figma-to-html/images/background.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  position: relative;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 120px; /* Increased logo size */
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+form .forgot-password {
+  font-size: 0.9rem;
+  color: #2290ae;
+  text-align: right;
+  text-decoration: none;
+}
+
+form button {
+  padding: 10px;
+  background-color: #2290ae;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1c7b93;
+}

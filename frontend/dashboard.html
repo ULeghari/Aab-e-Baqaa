@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="./images/logo-white.png" alt="Logo">
+                <h1>Aab-e-Baqaa</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">News & Articles</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Header -->
+            <header class="content-header">
+                <h2>Aab-e-Baqaa</h2>
+                <p>An AI-driven Web service for water sustainability prediction</p>
+            </header>
+
+            <!-- Statistics -->
+            <section class="stats">
+                <div class="chart-box">
+                    <h3>Water Availability Trend (Per Capita)</h3>
+                    <canvas id="chart1"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h3>Water Consumption (Sector Wise)</h3>
+                    <canvas id="chart2"></canvas>
+                </div>
+                <div class="circle-stats">
+                    <div class="stat">
+                        <p>Water Availability Prediction</p>
+                        <span>19% Current</span>
+                        <span>16% Future Prediction</span>
+                    </div>
+                    <div class="stat">
+                        <p>Water</p>
+                        <span>Before: 25%</span>
+                        <span>After: 19%</span>
+                    </div>
+                    <div class="stat">
+                        <p>Land</p>
+                        <span>Before: 75%</span>
+                        <span>After: 81%</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Risk Map -->
+            <section class="risk-map">
+                <h3>Risk Map</h3>
+                <div id="map"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

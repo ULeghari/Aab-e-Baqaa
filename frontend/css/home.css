@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f8fb;
+}
+
+.home-container {
+    display: flex;
+    width: 100%;
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    color: #2290ae;
+}
+
+.content-header p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed; /* Makes the sidebar fixed */
+    top: 0; /* Aligns it to the top of the viewport */
+    left: 0; /* Aligns it to the left of the viewport */
+    height: 100vh; /* Ensures the sidebar spans the full height of the viewport */
+    width: 20%; /* Maintains the same width as before */
+    background-color: #2290ae;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Adds scroll for the sidebar content if it overflows */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visual separation */
+}
+
+/* Adjust the content section to account for the fixed sidebar */
+.content {
+    margin-left: 20%; /* Pushes the content to the right to make space for the sidebar */
+    width: 80%; /* Adjusts the width accordingly */
+    padding: 20px;
+}
+
+.sidebar .logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a.active,
+.sidebar nav ul li a:hover {
+    background-color: #1c7b93;
+}
+
+/* Main Content */
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+/* Links Section */
+.top-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: white;
+    background-color: #2290ae;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.top-links a:hover {
+    background-color: #1c7b93;
+}
+
+/* Article Section */
+.article {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    color: #2290ae;
+    margin-bottom: 10px;
+}
+
+.article p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}

@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f8fb;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #2290ae;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a.active,
+.sidebar nav ul li a:hover {
+    background-color: #1c7b93;
+}
+
+/* Main Content */
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    color: #2290ae;
+}
+
+.content-header p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chart-box {
+    width: 45%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.circle-stats {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.circle-stats .stat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.risk-map {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.risk-map #map {
+    width: 100%;
+    height: 300px;
+    background-color: #e0e0e0; /* Placeholder for the map */
+}
